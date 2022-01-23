@@ -1,0 +1,5 @@
+#why f'{}' is convenient 
+a = 2
+b = 3
+print("the value of a is", a, "and the value of b is", b, "that's all")
+print(f'the value of a is {a}, and the value of b is {b}, that is all'}
