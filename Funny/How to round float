@@ -9,3 +9,8 @@ print(f'{b:.2f}')
 #cut off to two decimal
 c = 1.456
 print(float(str(c)[:-1]))
+
+#f'{}' is the best way to round off decimal
+d = 10.304
+print(round(d, 2))
+print(f'{d:.2f}')
