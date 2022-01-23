@@ -1,5 +1,6 @@
 #why f'{}' is convenient 
 a = 2
 b = 3
-print("the value of a is", a, "and the value of b is", b, "that's all")
-print(f'the value of a is {a}, and the value of b is {b}, that is all'}
+print("the value of a is", a,", and the value of b is", b, ", that's all")
+print(f'the value of a is {a}, and the value of b is {b}, that is all')
+#So, you can see using f'{}' is more convenient when using varible and punctuation in argument 
