@@ -1,0 +1,11 @@
+#print and return in function
+def sum (a, b):
+    print(a+b)    
+print(sum(3,4))
+#output: 7 None  
+
+def sum1(a, b):
+    return a+b
+print(sum1(3,4))
+#output: 7
+#if you don't wanna None appears in your output, using return at the very end of the function
