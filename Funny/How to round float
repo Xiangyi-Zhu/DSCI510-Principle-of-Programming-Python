@@ -1,1 +1,11 @@
+#How to round float number
+#Round to 2 decimal 
+a = 1.236
+print(round(a, 2))
 
+b = 1.346
+print(f'{b:.2f}')
+
+#cut off to two decimal
+c = 1.456
+print(float(str(c)[:-1]))
