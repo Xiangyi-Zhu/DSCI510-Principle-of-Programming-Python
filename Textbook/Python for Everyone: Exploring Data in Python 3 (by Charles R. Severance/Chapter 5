@@ -1,1 +1,43 @@
 #Chapter 5: Iteration
+
+
+# 5.1 Updating variables: where the new value of the varible depends on the old
+x = 5
+x = x + 1
+print(x)
+
+
+#5.2 One form of iteration: The while statement
+#countdown case (has iteration variable n)
+n = 5
+while n > 0:
+   print(n)
+   n = n - 1
+print('Blastoff')
+#it has five iterations, which means the body of loop was executed five times
+
+
+#5.3 Infinite loops
+n = 10
+while True:
+   print(n, end = ' ')
+   n = n - 1
+   break
+print('Done')
+print(n)
+# Output: 10 Done
+#         9
+
+while True:
+   line = input('> ')
+   if line == 'done':
+       break
+   print(line)
+print('Done!')
+
+
+   
+   
+   
+   
+
