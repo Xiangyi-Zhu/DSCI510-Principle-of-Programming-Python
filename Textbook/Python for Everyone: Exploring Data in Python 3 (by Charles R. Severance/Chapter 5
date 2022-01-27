@@ -36,6 +36,26 @@ while True:
 print('Done!')
 
 
+#5.4 Finish iterations with continue
+while True:
+   line = input('> ')
+   if line[0] == '#':
+      continue
+   if line == 'done':
+      break
+   print(line)
+print('Done!')
+#All the lines are printed except the one starts with the hash sign, when continue is executed, it ends the current iteration and jumps back to the while statement to start the next iteration.
+
+
+#5.5 Definite loops using for
+#loop through a set of things such as a list of words
+friends = ['Joe', 'Anna', 'Joy']
+for name in friends:
+   print('Happy New Year:', name)
+print('Done')
+#both name and friends are variables, and friend is iteration varible
+
    
    
    
