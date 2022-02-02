@@ -1,0 +1,30 @@
+#Chapter 7: Files
+#7.1 Persistance
+#So far, we have learned how to write programs and communicate our intentions to the CPU, using conditional execution, function, and iterations. 
+#We have learned how to create and use data structure in the Main Memory.
+#The CPU and memory are where our software works and runs.
+#But if you recall from our hardware architecture discussions, once the power is turned off, anything stored 
+#either in the CPU or main memory is erased. 
+#In this chapter, we start to work with secondary memory, which is not erased whe the power is turned off. 
+#We will primarily focus on reading and writing text files 
+
+#7.2 Opening files
+#Opening the file communications with your operating system, which knows where the data for each file is stored.
+#In this example, we open the file mbox.txt, which should be stored in the same folder that you are in when you start Python.
+fhand = open('mbox.txt')
+print(fhand)
+
+#7.3 Text files and lines
+#newline character in Python is \n, even though it looks like two characters, it is actually a single character. 
+stuff = 'Hello\nWorld'
+stuff
+print(stuff)
+len(stuff)    #Note: \n is treated as one character
+#Output: 'Hello\nWorld'
+#         Hello
+#         World
+#         11
+#So when we look at the lines in a file, we need to imagine that there is a special invisible character called newline at the end of each line,
+#which seperates the characters in the file into lines. 
+
+#7.4 Reading files
