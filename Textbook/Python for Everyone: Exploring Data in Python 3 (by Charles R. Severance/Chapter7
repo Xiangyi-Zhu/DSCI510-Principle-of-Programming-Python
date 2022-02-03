@@ -28,3 +28,28 @@ len(stuff)    #Note: \n is treated as one character
 #which seperates the characters in the file into lines. 
 
 #7.4 Reading files
+fhand = open('mbox-short.txt')
+count = 0
+for i in fhand:
+    count = count + 1
+print('line count: ', count)
+#The open statement takes the same amount of time regardless of the size of the file, 
+#and it does read the entire file
+
+#if you know the file is relatively small compared to the size of your main memory,
+#you can read the whole file into one string using read method on the file handle:
+fhand = open('mbox-short.txt')
+inp = fhand.read()
+print(len(inp))
+print(inp[：20])
+
+#7.5 Searching through a file
+#String methods to build simple search mechanisms
+
+
+
+
+
+
+
+
