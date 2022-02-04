@@ -1,0 +1,7 @@
+stringA = 'a\n\ts\n'
+count = 0
+for i in stringA:
+    count = count + 1
+print(count)
+#Output: 5
+#escape sequence is treated as one element in stringA
