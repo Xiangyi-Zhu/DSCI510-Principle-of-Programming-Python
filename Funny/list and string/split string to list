@@ -1,0 +1,8 @@
+#Split string
+stri = 'ass\nbaa\nas'
+print(stri)
+#Output: ass
+#        baa
+#        as
+stri.split('\n')
+print(stri)
