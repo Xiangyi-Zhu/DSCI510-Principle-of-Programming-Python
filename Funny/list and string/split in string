@@ -1,0 +1,20 @@
+#split a string return a list, split is a method used in string, and it cannt used in list, also split a list makes no sense
+stringA = 'a\nb\nc' #cell 1
+stringA.split('\n') #cell 2
+#Output[2]: ['a', 'b', 'c']
+stringA #cell 3 Here I wanna illustrate string.split() is method and it does not change the orignial string value
+#Output[3]: 'a\nb\nc'
+b = stringA.split('\n') #cell 4
+#Output[4]: ['a', 'b', 'c']
+b #cell 5
+#Output[5]: ['a', 'b', 'c']
+print(b)  #cell 6: here I wanna illustrate the output format of a list
+#Output: ['a', 'b', 'c']
+type(stringA) #cell 7
+#Output: str
+type(b)   #cell 8
+#Output: list
+
+#st = 'a\n\ts'
+#c = st.split('\n').split('\t')
+#AttributeError: 'list' object has no attribute 'split'
