@@ -1,0 +1,12 @@
+a = 1   #cell 1
+b = 2   #cell 2
+a       #cell 3
+b       #cell 3
+#Output: 2
+
+a = 1   #cell 1
+b = 2   #cell 2
+print(a)   #cell 3 
+print(b)   #cell 3
+#Output: 1
+#        2
