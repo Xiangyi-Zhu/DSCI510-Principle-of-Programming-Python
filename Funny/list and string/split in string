@@ -14,6 +14,10 @@ type(stringA) #cell 7
 #Output: str
 type(b)   #cell 8
 #Output: list
+print(stringA) #cell 9
+#Output :a
+#        b
+#        c
 
 #st = 'a\n\ts'
 #c = st.split('\n').split('\t')
