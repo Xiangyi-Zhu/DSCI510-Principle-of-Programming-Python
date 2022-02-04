@@ -5,3 +5,7 @@ for i in stringA:
 print(count)
 #Output: 5
 #escape sequence is treated as one element in stringA
+print(stringA)
+#Output: a
+#	        s
+#
