@@ -1,0 +1,12 @@
+#when operating list.append and string.split
+n = [] #cell 1
+num1 = 3 #cell 2
+n.append(num1)  #cell 3
+n  #cell 4
+#only cell 4 has output: [3]
+
+a = 'a\nb' #cell 5
+a.split('\n') #cell 6
+#Output: ['a', 'b']
+#Here I wanna illuatrate for append it change the orignal list and if you wanna some output you need to recall the list
+#and for split, it does not change the orignal string value, and when you split the string, you get the split result immediately
