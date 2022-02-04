@@ -1,0 +1,10 @@
+#Hints for Q3, how to determine if a string consists of lower case or upper case
+stringA = 'ASA'
+print(stringA.islower())       #Output: True or False
+print(stringA.isupper())       #Output: True or False
+
+f = 'AAs'
+f[0].isupper() and f[1:].islower() 
+#Output: False
+    
+
