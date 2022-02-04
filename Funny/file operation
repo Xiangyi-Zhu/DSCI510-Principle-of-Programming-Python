@@ -1,1 +1,19 @@
 fhand = open('weather_report.txt')
+inp = fhand.read()
+inp
+inp.split('\n')
+newlist = inp.split('\n')
+newlist
+newnewlist = []
+for i in newlist:
+    newele = i.replace('\t',',')
+    newnewlist.append(newele)
+newnewlist 
+
+finallist = []
+for h in newnewlist:
+    z = h.split(',')
+    finallist.append(z)
+finallist
+finallist[0]
+finallist[0][1]
