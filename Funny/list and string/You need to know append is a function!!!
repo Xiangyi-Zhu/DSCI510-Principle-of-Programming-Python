@@ -1,0 +1,14 @@
+#append function in list
+n = []
+for i in range (10):
+    n.append(i)
+    print(n) #if not print n, the new list will not appear
+print(n)
+
+z = []
+for i in range (10):
+    m = z.append(i)
+    print(m)
+    
+    
+ #The output is None because append is a function, it return a value, but if you print it you will get none
