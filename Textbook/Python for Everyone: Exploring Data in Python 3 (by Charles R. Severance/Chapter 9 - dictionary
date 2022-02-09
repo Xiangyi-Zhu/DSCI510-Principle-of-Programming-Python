@@ -1,0 +1,24 @@
+#Chapter 9: dictionaries
+# 9.0 You can think of a dictionary as a mapping between keys and a set of values.
+#To add items to dictionary 
+eng2sp = dict()
+print(eng2sp)
+#Output: {}
+eng2sp['one'] = 'uno'
+print(eng2sp)
+#Output: {'one': 'uno'}
+eng2sp = {'one' : 'uno', 'two' : 'dos', 'three' : 'tres'}
+#Output: {'one': 'uno', 'two': 'dos', 'three': 'tres'}
+#the order of items in a dictionary is unpredictable
+len(eng2sp)
+#Output: 3
+#in operator examine the value of key
+'one' in eng2sp
+#output: True
+'uno' in eng2sp
+#output: False
+#To see if sth appears as a value in dictionary, using method value
+valu = list(eng2sp.values())
+'uno' in valu
+Output: True
+
