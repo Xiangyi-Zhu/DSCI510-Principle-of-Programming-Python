@@ -1,1 +1,63 @@
 #lecture 5 (2) - dictionary tuple set
+#counting pattern
+counts = dict()
+lines = 'the clown ran after the car and the car ran into the tent and the tent fell down on the clown and the car'
+words = lines.split()
+for word in words:
+    counts[word] = counts.get(word, 0) + 1
+print(counts)
+#Output: {'the': 7, 'clown': 2, 'ran': 2, 'after': 1, 'car': 3, 'and': 3, 'into': 1, 'tent': 2, 'fell': 1, 'down': 1, 'on': 1}
+print(words)
+#Output: ['the', 'clown', 'ran', 'after', 'the', 'car', 'and', 'the', 'car', 'ran', 'into', 'the', 'tent', 'and', 'the', 'tent', 'fell', 'down', 'on', 'the', 'clown', 'and', 'the', 'car']
+
+#different ways of accessing the items in a dictionary
+#1
+counts = {'chuck' :1, 'fred': 42, 'jan': 100}
+for key in counts:
+    print(key, counts[key])
+#Output: chuck 1
+#        fred 42
+#        jan 100
+
+#2
+#three ways to access the keys, values, or both (items) from a dictionary
+#dict.keys()
+#dict.values()
+#dict.items()
+
+counts = {'chuck' :1, 'fred': 42, 'jan': 100}
+counts.keys() #Output: dict_keys(['chuck', 'fred', 'jan'])
+counts.values() #Output: dict_values([1, 42, 100])
+counts.items() #Output: dict_items([('chuck', 1), ('fred', 42), ('jan', 100)])
+
+jjj = {'chuck': 1, 'fred': 42, 'jan': 100}
+print(list(jjj))  
+print(list(jjj.keys()))
+print(list(jjj.values()))
+print(list(jjj.items()))
+#Output:
+#['chuck', 'fred', 'jan']
+#['chuck', 'fred', 'jan']
+#[1, 42, 100]
+#[('chuck', 1), ('fred', 42), ('jan', 100)]
+
+#3
+jjj = {'chuck': 1, 'fred': 42, 'jan': 100}
+for aaa,bbb in jjj.items():
+    print(aaa, bbb)
+#Output: 
+#chuck 1
+#fred 42
+#jan 100
+
+#print out the most frequent words in a file
+name = input('Enter a file: ')
+
+
+
+
+
+
+
+
+
