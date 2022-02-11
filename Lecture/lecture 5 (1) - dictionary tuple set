@@ -1,0 +1,112 @@
+#Compact way to create list
+[x * x for x in range(10)] #Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+[[x, pow(x,3)] for x in range(5)]  #Output: [[0, 0], [1, 1], [2, 8], [3, 27], [4, 64]]
+[ x * x for x in range(10) if x % 3 == 0] #Output: [0, 9, 36, 81]
+y = [i * i for i in range(10) if i % 3 ==0]
+z = []
+for i in range(10):
+    if i % 3 == 0:
+        z.append(i*i)
+print(z)  #Output: [0, 9, 36, 81]
+#append can stick the elements to the end of the list (add element to the list)
+
+#A method to create strings from a list of strings
+#.join join all elements in the list with a separator
+lst = ['Once', 'upon', 'a', 'time']
+''.join(lst) #Output: 'Onceuponatime'
+' '.join(lst)  #Output: 'Once upon a time'
+'_?_!_'.join(lst) #Output: 'Once_?_!_upon_?_!_a_?_!_time'
+
+#Collections: list, dictionary, tuples, sets
+#list: 1)mutable 2)allows for duplicates 3)objects can be of any type 
+#dictionary: 1)mutable 2)unordered collection of key:value pairs 3)key must be unique and no duplicates, and immutable type 4)values can be anything
+#tuple：like list but immutable
+#set: unordered collection of unique immutable objects
+
+#Dictionary
+purse = dict()
+purse['money'] = 12
+purse['candy'] = 3
+purse['tissues'] = 75
+print(purse) #Output: {'money': 12, 'candy': 3, 'tissues': 75}
+print(purse['candy']) #Output: 3
+purse['candy'] = purse['candy'] + 2
+print(purse) #Output: {'money': 12, 'candy': 5, 'tissues': 75}
+
+#Comparing list and dictionary
+#list
+lst = list()
+lst.append(21)
+lst.append(183)
+print(lst) #Output: [21, 183]
+lst[0] = 23
+print(lst) #Output: [23, 183]
+
+#dictionary
+ddd = dict()
+ddd['age'] = 21
+ddd['course'] = 182
+print(ddd) #Output: {'age': 21, 'course': 182}
+ddd['age'] = 23
+print(ddd) #Output: {'age': 23, 'course': 182}
+
+#Create a dictionary
+aaa = dict()
+bbb = {} #just using curly braces to create an empty dictionary
+ccc = {'chuck': 1, 'Fred': 42, 'jan': 100}
+
+#Counting different types of objects: a common use of dictionary
+ccc = dict()
+ccc ['csev'] = 1
+ccc ['cwen'] = 1
+print(ccc)
+#Output: {'csev': 1, 'cwen': 1}
+ccc['cwen'] = ccc['cwen'] + 1
+print(ccc)
+#Output: {'csev': 1, 'cwen': 2}
+'bsn' in ccc
+#Output: False
+'csev' in ccc
+#Output: True
+
+count = dict() #or count = {}
+names = ['csev', 'cwen','csev', 'zqian', 'cwen']
+for name in names:
+    if name not in count:
+        count[name] = 1
+    else:
+        count[name] = count[name] +1
+        
+#get method for dictionary
+if name in count:
+   x = count[name]
+else:
+   x = 0
+
+x = count.get(name,0) #0 here is default value if key does not exist 
+
+#Simplified Counting with get()
+count = dict()
+names = ['csev', 'cswe','csew', 'csev', 'sss','sss']
+for name in names:
+    count[name] = count.get(name, 0) 
+print(count)
+#Output: {'csev': 0, 'cswe': 0, 'csew': 0, 'sss': 0}
+count = dict()
+names = ['csev', 'cswe','csew', 'csev', 'sss','sss']
+for name in count:
+   count[name] = count.get(name, 0) + 1
+print(count)
+#Output: {'csev': 2, 'cswe': 1, 'csew': 1, 'sss': 2}
+
+
+
+
+
+
+
+
+
+
+
+
