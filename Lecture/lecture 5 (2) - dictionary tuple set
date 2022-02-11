@@ -51,7 +51,36 @@ for aaa,bbb in jjj.items():
 #jan 100
 
 #print out the most frequent words in a file
-name = input('Enter a file: ')
+name = input('Enter a file: ')  #clown.txt
+handle = open(name)
+counts = dict()
+for lines in handle:
+    words = lines.split()
+    for word in words:
+        counts[word] = counts.get(word, 0) + 1
+bigcount = None
+bigword = None
+for word, count in counts.items():
+    if bigcount is None or count > bigcount:
+        bigcount = count
+        bigword = word
+print(bigcount, bigword) 
+
+#Copying dictionaries
+d = {'a':1, 'b':2}
+d2 = d
+d['b'] = 3
+print(d2) #Output: {'a': 1, 'b': 3}
+d3 = d.copy()
+d['a'] = 'foo'
+print(d3)  #Output: {'a': 1, 'b': 3}
+print(d) #Output: {'a': 'foo', 'b': 3}
+print(d2) #Output: {'a': 'foo', 'b': 3}
+
+
+
+
+
 
 
 
