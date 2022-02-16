@@ -1,4 +1,4 @@
-#append function in list
+#append function in list, the textbook calls it as append() method
 n = []
 for i in range (10):
     n.append(i)
