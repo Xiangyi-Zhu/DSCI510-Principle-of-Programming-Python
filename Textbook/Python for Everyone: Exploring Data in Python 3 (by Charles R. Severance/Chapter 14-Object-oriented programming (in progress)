@@ -1,0 +1,52 @@
+#14.1 Managing larger programs
+#four basic programming patterns which we use to construct programs:
+#sequential code
+#conditional code (if statement)
+#repetitive code (loops)
+#store and reuse (function)
+#"As we build programs, we design data structures and write code to manipulate those data structure."
+
+#14.2 Getting started
+#Main aim of this chapter is to have basic understanding of how objects are constructed and how they function
+#and how to utilize the capabilities of objects that are provided by python and python library
+
+#14.3 Using objects
+#Python provides us with many built-in objects
+#Equivalent three lines: (stuff is a list)
+#In this code, we call the __getitem__ method in the list class 
+#and pass the list and the item we wanna retrieve from the list
+#as parameter
+print(stuff[0])
+print(stuff.__getitem__(0))
+print(list.__getitem__(stuff,0))
+
+#We can check the capabilities of an object by looking at the output of the dir() function
+stuff = list()
+dir(stuff)
+#Output: ['__add__', '__class__', '__class_getitem__', '__contains__',
+#'__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', 
+#'__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__iadd__', 
+#'__imul__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', 
+#'__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', 
+#'__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', 
+#'__sizeof__', '__str__', '__subclasshook__', 
+#'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+
+#14.4 Starting with programs
+#"One way to think about object-oriented programming is that it separates our program into multiple 'zones'
+#"Each zone contains some code and data (like a program)
+#'and has well-defined interaction with the outside world and the other zones within the program
+
+#link extraction application where we used the BeautifulSoup library
+
+
+
+
+
+
+
+
+
+
+
+
