@@ -1,0 +1,44 @@
+#1. Lists are objects, and the functions you can apply on lists are called methods. 
+#list.append() / list.extend() / list.insert() / list.remove() / list.pop()
+
+#2. an alternative view of progamming
+#Programming is not only could be seen as input, processing, and output, and it could also be organized as a set of cooperating objects, which are working together 
+#and make use of each other's capability
+
+#3. Object
+#Object is a bit of self-contained Code and Data
+#break the problem into smaller pieces and conquer
+#we have been using objects all along: string objects, integer object, dictionary object, list object
+
+#4. Definitions:
+#Class - a template (to generate objects): people 
+#Method or Message - a defined capability of a class, sth that class does (behavior): speak / think / walk 
+#Field or attribute - a bit of data in that class (state): tall, where they born
+#Object or Instance - a particular instance of a class: specific person complies with the definition of the class
+
+#5. dir() can be used to retrive methods of a class
+
+#6. Example:
+class PartyAnimal:
+    x = 0
+    
+    def party(self):
+        self.x = self.x + 1
+        print('So far', self.x)
+        
+an = PartyAnimal()
+an.party()
+PartyAnimal.party(an)
+
+class PartyAnimal: #In this case, x is equal to the time that party() is called, regardless of the objects
+    x = 0
+    
+    def party(self):
+        PartyAnimal.x = self.x + 1
+        print('So far', self.x)
+        
+        
+        
+        
+     
+
