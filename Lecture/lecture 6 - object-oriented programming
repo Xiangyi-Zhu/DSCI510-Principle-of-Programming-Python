@@ -37,8 +37,37 @@ class PartyAnimal: #In this case, x is equal to the time that party() is called,
         PartyAnimal.x = self.x + 1
         print('So far', self.x)
         
+#When you invoke the constructor, you create a new object in momery, a new chunk of memory, and memoery has address 
+
+#Inheritance
+#Subclass (also child class) inherits the attributes and behaviours from its parent class. 
+ 
+#Example:
+class Dog():
+    def walk(self):
+        return "*walking"
+    def speak(self):
+        return "Woof!"
+
+class IrishSetter(Dog):
+    def speak(self):
+        return "Arff"
+    def talk(self): 
+        return super().speak()
         
-        
+glenn = IrishSetter()
+print(glenn.walk()) #*walking
+print(glenn.speak()) #Arff  #because class IrishSetter method speak override / supersede its parent class's speak method
+print(glenn.talk())  #Woof!
+
+
+
+
+
+
+
+
+
         
      
 
