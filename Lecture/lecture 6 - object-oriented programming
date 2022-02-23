@@ -60,6 +60,7 @@ print(glenn.walk()) #*walking
 print(glenn.speak()) #Arff  #because class IrishSetter method speak override / supersede its parent class's speak method
 print(glenn.talk())  #Woof!
 
+#Multiple Inheritance
 
 
 
