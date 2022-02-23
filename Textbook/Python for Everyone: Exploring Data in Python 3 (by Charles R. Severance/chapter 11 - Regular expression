@@ -1,0 +1,18 @@
+#The task of searching and extracting is so common that python has a powerful library , called regular expressions
+#which can handle these kind of tasks elegantly
+
+#Although very powerful, they are a little complicated and their syntax takes some getting used to.
+
+#Regular expression are almost their own little programming language for searching and parsing strings. 
+
+#The regular expression library must be imported into your program before you can use it
+
+#Search function (the simplest use of re library)
+#example: search for lines that contain 'From':
+import re
+hand = open('mbox-short.txt')
+for line in hand:
+    line = line.rstrip()
+    if re.search('From:', line):
+        print(line)
+#This program does not use the real power of re, since we could use line.find() to accomplish the same result. 
