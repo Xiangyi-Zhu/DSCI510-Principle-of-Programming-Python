@@ -13,6 +13,41 @@ import re
 hand = open('mbox-short.txt')
 for line in hand:
     line = line.rstrip()
-    if re.search('From:', line):
+    if re.search('From:', line): #can use line.find() instead
         print(line)
 #This program does not use the real power of re, since we could use line.find() to accomplish the same result. 
+
+#Adding these (special characters) allows us to do sophisticated matching and extraction while writing very little code.
+#e.g. The caret character is used to match "the beginning" of a line
+#we can change our program to only match lines where "From:" was at the beginning of the line as follows
+import re
+hand = open('mbox-short.txt')
+for line in hand:
+    line = line.rstrip()
+    if re.search('^From:', line):
+        print(line)
+ #Can use line.startswith instead
+import re
+hand = open('mbox-short.txt')
+for line in hand:
+    line = line.rstrip()
+    if line.startswith('From:', 0,5):
+        print(line)
+        
+#11.1 Character matching in regular expressions
+#There are a number of special characters that let us build even more powerful regular expression.
+#period or full stop matches any characters
+#Example: search for lines that start with 'F', followed by 2 characters, followed by 'm'
+import re
+hand = open('mbox-short.txt')
+for line in hand:
+    line = line.rstrip()
+    if re.search('F..m:', line):
+        print(line)
+        
+        
+        
+
+
+
+
