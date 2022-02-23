@@ -1,0 +1,16 @@
+#Regular Expression
+#also referred to as 'regex' or 'regexp' 
+#really clever 'wild card' expression for matching and parsing string
+#very powerful and quite cryptic / fun once you understand them / 
+#How could we 'concisely' describe a string denotes an integar value?
+#"one or more digit characters"
+
+#a regular expression for integers:
+integer = [0-9]+  #It will cover '00001', '1235' +: one or more occurance of these characters
+
+#if we wanted to make sure to exclude numbers that start with '0's:
+integer = [1-9][0-9]* #first digit is from 1 to 9, second is 0-9, and * means 0/more occurance of these characters
+
+#real number:
+real = [+\-][0-9]+\.[0-9]+   #[+\-]: \is to escape -, because - is also used for range, \.is also used to escape.
+
