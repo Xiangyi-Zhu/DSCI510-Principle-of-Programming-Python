@@ -43,10 +43,20 @@ hand = open('mbox-short.txt')
 for line in hand:
     line = line.rstrip()
     if re.search('F..m:', line):
+        print(line)        
+#* and + indicates that a character can be repeated any number of times
+#+: one or more occurance of these characters
+#*: means 0/more occurance of these characters 
+#e.g. Search for lines that start with "From:", followed by one or more characters(.+),followed by an at-sign
+import re
+hand = open('mbox-short.txt')
+for line in hand:
+    line = line.rstrip()
+    if re.search('From:.+@', line):
         print(line)
-        
-        
-        
+
+#11.2 Extracting data using regular expression
+
 
 
 
