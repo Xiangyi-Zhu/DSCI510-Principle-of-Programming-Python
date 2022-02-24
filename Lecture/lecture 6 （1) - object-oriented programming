@@ -20,10 +20,10 @@
 
 #6. Example:
 class PartyAnimal:
-    x = 0
+    x = 0      #class variable
     
     def party(self):
-        self.x = self.x + 1
+        self.x = self.x + 1  #instance variable
         print('So far', self.x)
         
 an = PartyAnimal()
