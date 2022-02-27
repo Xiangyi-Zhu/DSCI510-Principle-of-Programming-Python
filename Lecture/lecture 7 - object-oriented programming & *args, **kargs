@@ -1,1 +1,6 @@
+#Two ways to call method:
+#object.method(args) == Class.method(object, args)
+dsci510.get_name()
+Course.get_name(dsci510)
 
+#
