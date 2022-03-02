@@ -3,4 +3,46 @@
 dsci510.get_name()
 Course.get_name(dsci510)
 
+#class vriable (under class) and instance varible (within def)
+
 #
+class Student(Person):
+    good_gpa = 3.0
+    def __init__(self, first_name: str, last_name: str, university: University, student_id: str):
+        super().__init__(first_name, last_name)  # initialize the super class Person
+        self.university = university
+        self.student_id = student_id
+        self.gpa = None
+        self.courses = []
+        university.student_dict[self.student_id] = self  # so we can look up the student by ID
+    def enroll(self, course) -> None:
+        self.courses.append(course)  # add course to student's courses
+        course.add_student(self)     # add student to course's students
+    def print_courses(self) -> None:
+        print(f"\nCourses for {self.get_full_name()}:")
+        for course in self.courses:
+            print(f" - {course.get_name()}")
+    def good_standing(self):
+        return self.gpa >= self.good_gpa
+
+mary = Student("Mary", "Davis", usc, "1287654390")
+mary.gpa = 3.2
+mary.good_standing()
+
+#can ask if an object is an instance of a class
+isinstance(usc, University) #True
+#if a subclass
+issubclass(Student, Person)
+
+#You can add attributes to an existing object, even if there were not defined an the class
+mary.iscool = True
+mary.iscool
+
+#__dict__: __dict__ keeps attributes of an object / varibale and functions in a class
+#Useful for debugging, quick look at the state of the object.
+#It keeps local attributes, it does not look at the hierarchy, it may not have all available attributes.
+
+
+
+
+
