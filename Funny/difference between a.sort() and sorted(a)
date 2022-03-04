@@ -1,0 +1,3 @@
+# Difference between sort() and sorted() in Python 
+#sort is a list method / sorted is a built-in function
+a = 
