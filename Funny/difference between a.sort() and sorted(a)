@@ -1,5 +1,5 @@
 # Difference between sort() and sorted() in Python 
-#sort is a list method / sorted is a built-in function
+#sort is a list method (function) return None / sorted is a built-in function
 a = [1, 32, 2, 5]
 a.sort() 
 a #O: [1, 2, 5, 32]
@@ -11,3 +11,5 @@ print(b) #O: None
 sorted(a) #O:[1, 2, 5, 32]
 b = sorted(a)
 print(b) #O: [1, 2, 5, 32]
+a #O: [1, 32, 2, 5]
+#sort changes the orignal lsit / sorted do not
