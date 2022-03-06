@@ -1,3 +1,13 @@
 # Difference between sort() and sorted() in Python 
 #sort is a list method / sorted is a built-in function
-a = 
+a = [1, 32, 2, 5]
+a.sort() 
+a #O: [1, 2, 5, 32]
+a.sort(reverse = True)
+a #O: [1, 2, 5, 32]
+b= a.sort()
+print(b) #O: None
+
+sorted(a) #O:[1, 2, 5, 32]
+b = sorted(a)
+print(b) #O: [1, 2, 5, 32]
