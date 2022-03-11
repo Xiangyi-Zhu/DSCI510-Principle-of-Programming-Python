@@ -1,0 +1,4 @@
+# Advanced Python: Decorator
+#Functions in python are actually first class objects 
+#You can pass on a function as an argument to another function
+#A decorator is a function that takes another function and extend the behavior of the function you pass
